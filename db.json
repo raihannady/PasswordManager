@@ -1,0 +1,39 @@
+{
+  "password": [
+    {
+      "id": "1",
+      "provider": "phincon.com",
+      "email": "mail@phincon.com",
+      "password": "Bethebest123",
+      "category": "work"
+    },
+    {
+      "id": "2",
+      "provider": "google.com",
+      "email": "mail@google.com",
+      "password": "google123",
+      "category": "work"
+    },
+    {
+      "id": "3",
+      "provider": "ros.com",
+      "email": "mail@ros.com",
+      "password": "ros123",
+      "category": "family"
+    },
+    {
+      "id": "4",
+      "provider": "raihan.com",
+      "email": "mail@raihan.com",
+      "password": "raihan123",
+      "category": "personal"
+    },
+    {
+      "id": "e5ef",
+      "provider": "nady.com",
+      "email": "nady@gmail.com",
+      "password": "tes",
+      "category": "personal"
+    }
+  ]
+}

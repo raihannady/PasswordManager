@@ -1,0 +1,16 @@
+@import "../../styles/base.scss";
+
+.container {
+  @include container;
+  .table {
+    text-align: right;
+    .action {
+      @include directionX;
+      justify-content: center;
+      .deleteButton {
+        color: red;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
