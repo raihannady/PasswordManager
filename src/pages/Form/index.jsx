@@ -33,12 +33,15 @@ const Form = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (formData.password.length < 6) {
+      alert("Password must be at least 8 characters long");
       return;
     }
 
     try {
       const response = await callAPI("/password", "POST", {}, {}, formData);
+      console.log("berhasil");
       navigate("/");
     } catch (error) {
       console.error("Error during registration:", error);
@@ -56,11 +59,11 @@ const Form = () => {
           </div>
           <form onSubmit={handleSubmit}>
             <Box
-              component="form"
+              component="div"
               sx={{
                 "& .MuiTextField-root": { mb: 3, width: "40ch" },
               }}
-              Validate
+              noValidate
               autoComplete="off"
             >
               <div>
@@ -68,6 +71,7 @@ const Form = () => {
                   required
                   id="outlined-basic"
                   label="Provider"
+                  type="text"
                   variant="outlined"
                   name="provider" // Add name attribute
                   value={formData.provider}
@@ -89,12 +93,6 @@ const Form = () => {
               <div>
                 <TextField
                   required
-                  // error={formData.password.length < 6}
-                  // helperText={
-                  //   formData.password.length < 6
-                  //     ? "Password must be at least 6 characters long"
-                  //     : ""
-                  // }
                   id="outlined-basic"
                   label="Password"
                   variant="outlined"

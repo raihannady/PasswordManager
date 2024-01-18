@@ -33,7 +33,7 @@ function Header() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
+          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -44,12 +44,12 @@ function Header() {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              // letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
-            Database
+            Dashboard
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
